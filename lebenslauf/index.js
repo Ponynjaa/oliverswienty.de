@@ -4,7 +4,7 @@ let themeToggle;
 let header;
 
 $(document).ready(() => {
-    console.log("was guckst du");
+    console.log("https://github.com/Ponynjaa/oliverswienty.de");
     header = $("#header");
     themeToggle = $("#theme-toggle");
     setThemePreference();
