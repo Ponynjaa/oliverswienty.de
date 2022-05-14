@@ -34,12 +34,15 @@ html::after {
         color: var(--clr-foreground);
     }
 
+    html {
+        overflow-x: hidden;
+    }
+
     html::after {
         visibility: hidden;
     }
 
     header {
-        overflow: hidden, visible;
         box-shadow: 0 2px 2px var(--clr-shadow);
     }
 
@@ -156,13 +159,15 @@ html::after {
         width: max-content;
         font-size: 0.7rem;
         top: 95%;
-        left: 50%;
+        left: -100%;
         transform: translateX(-50%), scale(0);
         padding: 0.5em 0.3em;
         border-radius: 0.125em;
         opacity: 0;
         transform-origin: top;
         transition: transform 0ms linear 100ms, opacity 100ms linear;
+        pointer-events: none;
+        overflow-x: hidden;
     }
 
     #theme-toggle:hover,
