@@ -18,6 +18,28 @@ header {
     box-shadow: 0 2px 2px var(--clr-shadow);
 }
 
+img {
+    max-height: 150px;
+}
+
+body section:first-of-type img {
+    max-height: 100%;
+}
+
+.subheading {
+    position: relative;
+}
+
+.subheading::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+    width: 325px;
+    height: 1px;
+    background-color: var(--clr-foreground);
+}
+
 .bg-clr-secondary {
     background-color: var(--clr-bg-secondary);
 }
@@ -56,6 +78,10 @@ header {
     --clr-foreground: hsl(0 0% 100%);
     --clr-bg-secondary: #36393f;
     --clr-shadow: hsl(0 100% 10%);
+}
+
+.dark-theme #pic-xpublisher {
+    content: url("../assets/pics/Xpublisher\ Company\ Logo\ -\ White.png");
 }
 
 .light-theme header img {
